@@ -9,7 +9,7 @@ const Popular = () => {
             </div>
             <div className='mt-[60px] ml-8 w-full md:w-auto'>
                 <div className='flex flex-col md:flex-row justify-between'>
-                    <div className='items-center sm:ml-36'>
+                    <div className='items-center ml-4'>
                         <div className='flex'>
                             <img className='w-2 h-2 mt-[6px]' src="/public/Pointer.png" alt="" />
                             <p className='font-roboto font-semibold text-sm text-[#BD1F17] ml-2 '>Crispy, Every Bite Taste</p>

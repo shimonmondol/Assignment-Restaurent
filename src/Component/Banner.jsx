@@ -1,62 +1,36 @@
-import React from 'react';
+import React from 'react'
 
 const Banner = () => {
   return (
-    <div className="bg-red-600 h-auto lg:h-[600px]">
-      {/* Header Section */}
-      <div className="flex flex-wrap justify-between items-center px-4 lg:px-16 py-4">
-        {/* Logo and Title */}
-        <div className="flex items-center">
-          <img
-            className="w-10 h-10"
-            src="/public/Logo.png"
-            alt="Logo"
-          />
-          <h1 className="font-poppins font-semibold text-white text-lg ml-2">Restaurant</h1>
+    <div className='bg-red-600 h-[600px]'>
+        <div className='flex pt-4'>
+            <img className='ml-40 pt-4 w-[25px] h-[40px]' src="/public/Logo.png" alt="" />
+            <h1 className='font-poppins font-semibold text-[#FFFFFF] mt-4 ml-4'>Restaurant</h1>
+            <ul className='flex mt-[22px] ml-12 font-raleway text-xs text-[#FFFFFF] gap-6'>
+              <li>Home</li>
+              <li>About</li>
+              <li>Portfolio</li>
+              <li>Clients</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+            <button className='font-roboto font-semibold text-xs bg-[#FEBF00] w-28 h-8 ml-56 mt-4'>BOOK A TABLE</button>
         </div>
-
-        {/* Navigation */}
-        <ul className="hidden lg:flex space-x-6 font-raleway text-xs text-white">
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Clients</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </ul>
-
-        {/* Button */}
-        <button className="font-roboto font-semibold text-xs bg-[#FEBF00] px-4 py-2 lg:w-28">
-          BOOK A TABLE
-        </button>
-      </div>
-
-      {/* Main Content Section */}
-      <div className="flex flex-wrap justify-center lg:justify-between items-center px-4 lg:px-16 py-8">
-        {/* Text Section */}
-        <div className="text-center lg:text-left lg:ml-12">
-          <h1 className="font-bebas font-medium text-4xl lg:text-6xl text-white mt-4 lg:mt-28">
-            TASTE THE AUTHENTIC<br /> SAUDI CUISINE
-          </h1>
-          <p className="font-roboto text-white text-sm mt-4">
-            Among the best Saudi chefs in the world, serving <br /> you something beyond flavor.
-          </p>
-          <button className="font-roboto font-semibold text-xs bg-[#FEBF00] px-4 py-2 mt-4">
-            EXPLORE MENU
-          </button>
+        <div className='flex justify-center'>
+          <div className='ml-12 '>
+              <h1 className='font-bebas font-medium text-6xl text-[#FFFFFF] mt-28 ml-16'>TASTE THE AUTHE<br />  SAUDI CUISINE</h1>
+              <p className='font-roboto text-[#FFFFFF] text-xs mt-4 ml-16'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
+              <button className='font-roboto font-semibold text-xs bg-[#FEBF00] w-28 h-8 mt-4 ml-16'>EXPLORE MENU</button>
+          </div>
+          <div>
+            {/* <img className='w-6 h-6 ml-[400px]' src="/public/Vector.png" alt="" /> */}
+            
+            <img className='relative w-[500px] mt-12' src="/public/image 1.png" alt="" />
+            <h1 className='absolute inset-0 top-44 left-[550px] font-bebas font-medium text-6xl bg-red-800 w-[100px] h-[130px] ml-[-2px] text-[#FFFFFF]'> NTIC</h1>
+          </div>
         </div>
-
-        {/* Image Section */}
-        <div className="relative mt-8 lg:mt-0">
-          <img
-            className="w-full max-w-md lg:max-w-lg"
-            src="/public/image 1.png"
-            alt="Dish"
-          />
-        </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner
